@@ -1,0 +1,221 @@
+.our-project {
+	padding: 90px 0;
+	background-color: #FFFFFF
+}
+
+.our-project__wrapper {
+	display: grid;
+	grid-template-columns: fit-content(680px) fit-content(380px);
+	grid-template-rows: auto;
+	gap: 52px 120px;
+}
+
+.our-project__lenta {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.news-dog {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.big-project {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.our-project__title {
+	font-family: "Comfortaa";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 50px;
+}
+
+/* блок our-project */
+.our-project__item {
+	display: grid;
+	grid-template-columns: minmax(130px, 280px) auto;
+	gap: 20px;
+}
+
+.our-project__list {
+	display: grid;
+    grid-row-gap: 30px;
+}
+
+.our-project__subtitle-img {
+	font-family: "Helvetica Neue Cyr-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+
+.our-project__text-img {
+	margin-bottom: 20px;
+}
+
+.our-project__link-img {
+	font-family: "Helvetica Neue Cyr-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	color: var( --main-orange);
+	position: relative;
+}
+
+.our-project__link-img:after {
+	content: "";
+	background-image: url(../img/our-project-orange-arrow.png);
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	top: -2px;
+	right: -44px;
+}
+
+/* фото our-project__lenta */
+
+.our-project__img {
+	max-width: 280px;
+	height: 180px;
+}
+
+.our-project__blue-dog {
+	background-image: url(../img/our-dog-home-blue.jpg);
+}
+
+.our-project__orange-dog {
+	background-image: url(../img/our-dog-orange-kurtka.jpg);
+}
+
+.our-project__dog-girl {
+	background-image: url(../img/our-dog-girl.jpg);
+}
+
+.our-project__dog-brown {
+	background-image: url(../img/our-dog-brown.jpg);
+}
+
+/* блок news-dog */
+.news-dog__block-img {
+	background-image: url(../img/news-dog-dogs.jpg);
+	background-repeat: no-repeat;
+	max-width: 380px;
+	height: 450px;
+	object-fit: cover;
+	padding: 10px;
+} 
+
+.news-dog__block-img-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.news-dog__element {
+	font-family: "Helvetica Neue Cyr-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	color: #FFFFFF;
+	max-width: 360px;
+}
+
+.news-dog__link {
+	font-family: "Helvetica Neue Cyr-Medium";
+	font-style: normal;
+	font-weight: 500;
+	color: var(--main-orange);
+	margin-bottom: 15px;
+	text-align: end;
+	padding-right: 44px;
+	position: relative;
+}
+
+.news-dog__link:after {
+	content: "";
+	background-image: url(../img/our-project-orange-arrow.png);
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+}
+
+/* блок big-project */
+.big-project__title {
+	font-family: "Helvetica Neue Cyr-Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 22px;
+}
+
+.big-project__list {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(60px, 80px));
+    grid-template-rows: repeat(3, minmax(52px, 70px));
+    gap: 20px;
+}
+
+/* фото big-project */
+.big-project__img {
+	width: 80px;
+	height: 70px;
+}
+
+.big-project__dog-orange-1 {
+	background-image: url(../img/big-project-dog-orange-1.jpg);
+}
+
+.big-project__mops-2 {
+	background-image: url(../img/big-project-mops-2.jpg);
+}
+
+.big-project__rabbit-3 {
+	background-image: url(../img/big-project-rabbit-3.jpg);
+}
+
+.big-project__malamut-4 {
+	background-image: url(../img/big-project-malamut-4.jpg);
+}
+
+.big-project__dog-brown-5 {
+	background-image: url(../img/big-project-dog-brown-5.jpg);
+}
+
+.big-project__popugay-blue-6 {
+	background-image: url(../img/big-project-popugay-blue-6.jpg);
+}
+
+.big-project__children-dog-7 {
+	background-image: url(../img/big-project-children-dog-7.jpg);
+}
+
+.big-project__kakadu-8 {
+	background-image: url(../img/big-project-kakadu-8.jpg);
+}
+
+.big-project__yellow-parrot-9 {
+	background-image: url(../img/big-project-yellow-parrot-9.jpg);
+}
+
+.big-project__jeans-dog-10 {
+	background-image: url(../img/big-project-jeans-dog-10.jpg);
+}
+
+.big-project__doghat-girl-11 {
+	background-image: url(../img/big-project-doghat-girl-11.jpg);
+}
+
+.big-project__white-rabbit-12 {
+	background-image: url(../img/big-project-white-rabbit-12.jpg);
+}

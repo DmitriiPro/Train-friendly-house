@@ -1,0 +1,222 @@
+@font-face {
+	font-family: "Comfortaa";
+	src: local("Comfortaa"), local("Comfortaa-Regular"), url("../font/Comfortaa-Regular.woff2") format("woff2"),
+	url("../font/Comfortaa-Regular.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Medium";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Medium"), url("../font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Roman";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Roman"), url("../font/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Light";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Light"), url("../font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Light.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+.help__title {
+    font-family: "Comfortaa";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    color: var( --main-orange, #ff8a00);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.help__list {
+    counter-reset: count 0; 
+    font-family: "Comfortaa";
+    font-size: 50px;
+    line-height: 50px; 
+    font-weight: 400;
+    color: var( --main-orange, #ff8a00);;
+    list-style: none;
+    gap: 50px;
+}
+
+.help__item {
+    font-family: 'Helvetica Neue Cyr';
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--main-color, #282626);
+}
+
+.item-block-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-one-left {
+    width: 480px;
+    padding-left: 100px;
+}
+
+.block-one {
+    width: 580px;
+    height: 298px;
+}
+.item-block-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-two-right {
+    width: 580px;
+    /* height: 303px; */
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.item-block-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-three-right {
+    width: 580px;
+    height: 382px;
+    
+}
+
+.block-three-left {
+    padding-left: 100px;
+}
+
+.help__item {
+    margin-bottom: 50px;
+}   
+
+.title::before {
+    counter-increment: count;            
+    content: counter(count); 
+    border-radius: 50%; 
+    background: #ffffff;
+    padding: 15px 30px; 
+    position: absolute; 
+    top: -15px; 
+    left: -100px;  
+    font-family: Comfortaa;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    color: var( --main-orange, #ff8a00);
+}
+
+.help__subtitle-volunteer {
+    padding-left: 100px;
+} 
+
+.help__subtitle-volunteer::before {
+    counter-increment: count; 
+    content: counter(count); 
+    position: absolute; 
+    top: -15px; 
+    left: -2px; 
+}
+
+.title {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.help__subtitle-finance {
+    margin-bottom: 20px;
+}
+
+.help__subtitle-volunteer {
+    margin-bottom: 50px;
+}
+
+.help__subtitle-opekun title {
+    margin-bottom: 20px;
+}
+
+.help__element {
+    font-family:'Helvetica Neue Cyr-light';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.help__element_opekun {
+    width: 466px;
+}
+
+.help__element_text_weight {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/* кнопка  */
+
+.help__block-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.help__btn {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-orange, #FF8A00);
+    text-transform: uppercase;
+    width: 180px;
+    height: 155px;
+    
+}
+
+.help__button {
+    padding-top: 111px;
+    background-image: url('../img/lapa.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right 35px;
+    border: transparent;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* состояния */
+/* кнопка лапа */
+
+.help__block-btn {
+    transition: all 0.200s ease-in, color 0.200s ease-in;
+}
+
+.help__block-btn:hover {
+    filter: opacity(0.9);
+}
+
+.help__block-btn:active {
+    filter: opacity(0.8);
+}

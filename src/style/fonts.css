@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Comfortaa";
+	src: local("Comfortaa"), local("Comfortaa-Regular"), url("../font/Comfortaa-Regular.woff2") format("woff2"),
+	url("../font/Comfortaa-Regular.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Comfortaa-Bold";
+	src: local("Comfortaa"), local("Comfortaa-Bold"), url("../font/Comfortaa-Bold.woff2") format("woff2"),
+	url("../font/Comfortaa-Bold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Light";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Light"), url("../font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Light.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Roman";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Roman"), url("../font/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Medium";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Medium"), url("../font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Comfortaa-Light";
+	src: local("Comfortaa"), local("Comfortaa-Light"), url("../font/Comfortaa-Light.woff2") format("woff2"), url("../font/Comfortaa-Light.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}

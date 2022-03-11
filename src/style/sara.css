@@ -1,0 +1,537 @@
+.sara {
+    padding: 15px 0 90px;
+    background: #FFFFFF;
+}
+
+.container {
+    position: relative;
+}
+
+.container-sara {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 580px;
+}
+
+.sara__title {
+    font-family: "Comfortaa-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    width: 410px;
+    z-index: 10;
+}
+
+.sara__title-orange {
+    color: var(--main-orange, #FF8A00);
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    width: 530px;
+    z-index: 10;
+}
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    gap: 81px;
+    margin-bottom: 25px;
+    align-self: flex-end;
+    padding-left: 100px;
+}
+
+.wrapper-dog::after {
+    content:"";
+    background-image: url('../img/sara-dog.png');
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wrapper-name-animals {
+    /* display: flex;
+    flex-direction: column; */
+    margin-right: 100px;
+    padding-top: 100px;
+    z-index: 10;
+    display: none;
+}
+
+.sara__block-btn {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+    max-width: 180px;
+    height: 155px;
+}
+
+.sara__element {
+    font-family:  "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.sara__btn {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-orange, #FF8A00);
+    text-transform: uppercase;
+    /* width: 180px;
+    height: 155px; */
+    z-index: 9;
+}
+
+.sara__button {
+    padding-top: 111px;
+    background-image: url('../img/lapa.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right 35px;
+    border: transparent;
+    align-items: center;
+    background-color: transparent;
+}
+
+.btn-animals {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    width: 180px;
+    border:transparent;
+    background-color: transparent;
+}
+
+.sara__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* стили для модального окна */
+
+.sara-container {
+    display: none;
+}
+
+.modal-order:before {
+    content: '';
+	background: rgba(0, 0, 0, 0.67);
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: -1;
+}
+
+.modal-order {
+    z-index: 52;
+    position: fixed;
+    top: calc(50% - 300px);
+    left: calc(50% - 400px);
+}
+
+.sara__modal-knopa {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: inherit;
+}
+
+/* ///////////////////////////////////////// */
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.form-wrap {
+    background:  var(--main-background, #E5E5E5);
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 780px;
+    height: 562px;
+}
+
+.form-wrapper {
+    /* height: 562px; */
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.sara__title-modal {
+    font-family: "Comfortaa-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: var( --main-orange,#FF8A00);
+    margin-bottom: 30px;
+}
+
+.sara__element-indent {
+    margin-bottom: 60px;
+}
+
+.sara__element_color_orange {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var( --main-orange,#FF8A00);
+    margin-bottom: 20px;
+}
+
+.sara__link {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-color, #282626);
+    padding-left: 38px;
+}
+
+.sara__link_tel {
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 45px;
+    width: 177px;
+}
+
+.sara__link_email {
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 245px;
+}
+
+.sara__subtitle {
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-color, #282626);
+    margin-bottom: 20px;
+}
+
+.form-field {
+    display: inline-block;
+}
+
+.form-field__label {
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main-color, #282626); 
+    text-align: start;
+    display: block;
+}
+
+.form-field__input {
+    width: 280px;
+    height: 40px;
+    background: #FFFFFF;
+    border: transparent;
+}
+
+.sara__btn-modal {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border: transparent;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding-top: 73px;
+    color: var( --main-orange,#FF8A00);
+}
+
+.sara__btn-img {
+    background-image: url("../img/lapka.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 73px;
+    transition: all 0.200s ease-in, color 0.200s ease-in;
+}
+
+/* состояния  */
+/* кнопка лапа */
+
+.sara__btn-lapa {
+    display: block;
+    text-align: end;
+}
+
+.sara__btn-lapa:hover {
+    filter: opacity(0.9);
+}
+
+.sara__btn-lapa:active {
+    filter: opacity(0.8);
+}
+
+/* инпут */
+
+.form-field__input {
+    transition:  0.200s ease-in;
+    
+}
+
+.form-field__input:hover {
+    border: 1px solid var( --main-color, #282626);
+    filter: opacity(0.3);
+}
+
+.form-field__input:active {
+    border: 1px solid var( --main-color, #282626);
+    filter: opacity(1);
+}
+
+/* ////////////////////////////////////// */
+
+/* состояния модального окна */
+
+.form__modal-knopa {
+    transition: all 0.200ms ease-in;
+}
+
+.form__modal-knopa:hover {
+    opacity: 0.8;
+}
+
+.form__modal-knopa:active {
+    opacity: 1;
+}
+
+/* заканчиваются стили модального окна */
+
+/* состояния */
+
+.btn-animals {
+    transition: border 0.200s ease-in, color 0.200s ease-in;
+
+}
+
+.btn-animals:hover {
+    border: 1px solid var(--main-orange, #FF8A00);
+}
+
+.btn-animals:active {
+    border: 1px solid var(--main-orange, #FF8A00);
+    color: var(--main-orange, #FF8A00);
+}
+
+/* кнопка лапа */
+.sara__block-btn {
+    transition: all 0.200s ease-in, color 0.200s ease-in;
+}
+
+.sara__block-btn:hover {
+    filter: opacity(0.9);
+}
+
+.sara__block-btn:active {
+    filter: opacity(0.8);
+}
+
+/* адаптивы */
+@media(max-width: 1024px) {
+    .sara {
+        padding: 15px 0 70px 0;
+    }
+
+    .container-sara {
+        height: 450px;
+    }
+
+    .sara__title-orange {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .sara__title {
+        font-size: 30px;
+        line-height: 44px;
+        width: 300px;
+        height: 182px;
+    }
+
+    .wrapper-text {
+        gap: 13px;
+        align-self: center;
+    } 
+
+    .sara__block-btn {
+        width: 148px;
+        height: 126px;
+    }
+
+    .sara__btn {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sara__button {
+        padding-top: 90px;
+        background-image: url(../img/lapa-1024.png);
+    }
+
+    .wrapper-dog::after {
+        width: 450px;
+        height: 450px;
+        right: 30px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 768px) {
+    .sara {
+        padding: 15px 0 60px 0;
+    }
+
+    .container-sara {
+        height: 498px;
+    }
+
+    .wrapper-text {
+        padding-left: 0;
+        align-self: start;
+        margin-bottom: 0;
+        gap: 150px;
+    }
+
+    .sara__title-orange {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .sara__title {
+        font-size: 24px;
+        line-height: 30px;
+        width: unset;
+        height: unset;
+    }
+
+    .sara__button {
+        padding-top: 80px;
+        background-image: url(../img/lapa-768.png);
+    }
+
+    .sara__block-btn {
+        width: 145px;
+        height: 120px;
+        margin-left: 80px;
+    }
+
+    .wrapper-dog::after {
+        width: 420px;
+        height: 420px;
+        right: 0;
+        top: 51px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .wrapper-dog::after {
+        background-position: right -66px bottom;
+        background-repeat: no-repeat;
+    }
+
+    .sara__title {
+        width: 326px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .sara {
+        padding: 15px 0 40px 0;
+    }
+
+    .container-sara {
+        height: 536px;
+    }
+
+    .wrapper-text {
+        gap: 346px;
+        width: 100%;
+    }
+
+    .sara__title-orange {
+        font-size: 26px;
+        line-height: 44px;
+    }
+
+    .sara__title {
+        font-size: 18px;
+        line-height: 26px;
+        width: 270px;
+        align-self: center;
+    }
+
+    .sara__block-btn {
+        width: 84px;
+        height: 78px;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .sara__btn {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .sara__button {
+        padding-top: 55px;
+        background-image: url(../img/lapa-320.png);
+        background-position: center top;
+    }
+
+    .wrapper-dog::after {
+        width: 296px;
+        height: 330px;
+        right: 130px;
+        top: 82px;
+        background-position: top right -84px;
+    }
+}
+
+@media(max-width: 320px) {
+    .sara__title {
+        text-align: start;
+    }
+
+    .wrapper-dog::after {
+        width: 270px;
+        height: 266px;
+        right: 29px;
+        background-position: center;
+        background-size: cover;
+    }
+}

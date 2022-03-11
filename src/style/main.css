@@ -1,0 +1,70 @@
+.pets {
+  padding: 90px 0 45px 0;
+  background-color: #ffffff;
+}
+.pets__title {
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 50px;
+}
+.pets__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "one one two three" "four five six three";
+  row-gap: 44px;
+}
+.pets__item_one {
+  grid-area: one;
+}
+.pets__item_two {
+  grid-area: two;
+  position: relative;
+}
+.pets__item_three {
+  grid-area: three;
+  justify-self: end;
+}
+.pets__item_four {
+  grid-area: four;
+}
+.pets__item_five {
+  grid-area: five;
+}
+.pets__item_six {
+  grid-area: six;
+  justify-self: center;
+}
+.pets__figure-wrapper {
+  display: grid;
+}
+.pets__figure_one {
+  width: 480px;
+}
+.pets__figure_two {
+  width: 280px;
+  position: absolute;
+  top: 0;
+  left: -90px;
+}
+.pets__figure_three {
+  width: 380px;
+}
+.pets__figure_four, .pets__figure_five {
+  width: 280px;
+}
+.pets__figure_six {
+  width: 180px;
+}
+.pets__figcaption {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.pets__figcaption_six {
+  padding-top: 20px;
+}
+
+

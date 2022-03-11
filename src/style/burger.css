@@ -1,0 +1,135 @@
+.burger {
+    width: 394px;
+    border-bottom: 10px solid var(--main-orange, #FF8A00);
+    background-color: #F2F0F1;
+    display: none;
+}
+
+.burger_position:before {
+    content: "";
+    background-image: url('../img/burger-delta.png');
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 30px;
+    position: absolute;
+    top: -29px;
+    left: 1px;
+}
+
+.burger-wrapper {
+    padding: 53px 40px 23px 20px;
+} 
+
+.burger__item:not(:last-child) {
+    border-bottom: 2px solid var(--main-orange, #FF8A00);
+}
+
+.burger__item {
+    padding: 15px 0 15px 0;
+}
+
+.burger__link {
+    font-family:"Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    z-index: 60;
+    
+}
+
+.header__link_double {
+    display: none;
+}
+
+/* состояния */
+.burger__link:hover {
+    text-decoration: underline;
+}
+
+.burger__link:active {
+    text-decoration: none;
+}
+
+.burger__link {
+    transition: all 0.200ms ease-in;
+} 
+
+/* адаптивы */
+@media(max-width: 1024px) {
+    .burger {
+        width: 349px;
+    }
+
+    .burger-wrapper {
+        padding: 27px 20px 17px 20px;
+    }
+
+    .burger__link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .burger__item:not(:last-child) {
+        border-bottom: 1px solid var(--main-orange, #FF8A00);
+    }
+
+    .burger__item {
+        padding: 13px 0 13px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .burger-wrapper {
+        padding: 27px 20px 31px 20px;
+    }
+
+    .header__link_double {
+        display: block;
+        margin-top: 30px;
+        margin-left: 19px;
+    }
+}
+
+@media(max-width: 480px) {
+    .burger {
+        width: 285px;
+    }
+
+    .burger_position:before {
+        width: 0;
+        height: 0;
+    }
+
+    .burger-menu {
+        top: 46px;
+    }
+
+    .burger-wrapper {
+        padding: 5px 0 15px 0;
+    }
+
+    .burger__link {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+    .header__link_double {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 31px;
+    }
+
+    .header__link_double {
+        margin-top: 18px;
+        margin-left: 10px;
+    }
+}

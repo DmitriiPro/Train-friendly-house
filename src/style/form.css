@@ -1,0 +1,210 @@
+@font-face {
+	font-family: "Comfortaa-Bold";
+	src: local("Comfortaa"), local("Comfortaa-Bold"), url("../font/Comfortaa-Bold.woff2") format("woff2"),
+	url("../font/Comfortaa-Bold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Medium";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Medium"), url("../font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue Cyr-Light";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Light"), url("../font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Light.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+.form {
+    padding: 45px 0 140px;
+    background: #FFFFFF;
+}
+
+.form-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.form-wrap {
+    background:  var(--main-background, #E5E5E5);
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 780px;
+    height: 562px;
+}
+
+.form-wrapper {
+    /* height: 562px; */
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.form__title {
+    font-family: "Comfortaa-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: var( --main-orange,#FF8A00);
+    margin-bottom: 30px;
+}
+
+.form__element-indent {
+    margin-bottom: 60px;
+}
+
+.form__element_color_orange {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var( --main-orange,#FF8A00);
+    margin-bottom: 20px;
+}
+
+.form__link {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-color, #282626);
+    padding-left: 38px;
+}
+
+.form__link_tel {
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 45px;
+    width: 177px;
+}
+
+.form__link_email {
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 245px;
+}
+
+.form__subtitle {
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--main-color, #282626);
+    margin-bottom: 20px;
+}
+
+.form-field {
+    display: inline-block;
+}
+
+.form-field__label {
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main-color, #282626); 
+    text-align: start;
+    display: block;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.form__inp {
+    width: 280px;
+    height: 40px;
+    background: #FFFFFF;
+    border: transparent;
+}
+
+.form__btn {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border: transparent;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding-top: 73px;
+    color: var( --main-orange,#FF8A00);
+}
+
+.form__btn_img {
+    background-image: url("../img/lapka.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 73px;
+    transition: all 0.200s ease-in, color 0.200s ease-in;
+}
+
+/* состояния  */
+/* кнопка лапа */
+
+.form__btn-lapa {
+    display: block;
+    text-align: end;
+}
+
+.form__btn-lapa:hover {
+    filter: opacity(0.9);
+}
+
+.form__btn-lapa:active {
+    filter: opacity(0.8);
+}
+
+/* инпут */
+
+.form-field__input {
+    transition:  0.200s ease-in;
+    
+}
+
+.form-field__input:hover {
+    border: 1px solid var( --main-color, #282626);
+    filter: opacity(0.3);
+}
+
+.form-field__input:active {
+    border: 1px solid var( --main-color, #282626);
+    filter: opacity(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

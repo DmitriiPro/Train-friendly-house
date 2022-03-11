@@ -1,0 +1,93 @@
+.pets {
+	padding: 90px 0 45px 0;
+	background-color: #ffffff;
+
+	&__title {
+		font-family: "Comfortaa";
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 60px;
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+		"one one two three"
+		"four five six three"
+		;
+		row-gap: 44px;
+	}
+
+	&__item {
+		
+		&_one {
+			grid-area: one;
+		}
+
+		&_two {
+			grid-area: two;
+			position: relative;
+		}
+
+		&_three {
+			grid-area: three;
+			justify-self: end;
+		}
+
+		&_four {
+			grid-area: four;
+		}
+
+		&_five {
+			grid-area: five;
+		}
+
+		&_six {
+			grid-area: six;
+			justify-self: center;
+		}
+	}
+
+	&__figure-wrapper {
+		display: grid;
+	}
+
+	&__figure {
+		
+		&_one {
+			width: 480px;
+		}
+
+		&_two {
+			width: 280px;
+			position: absolute;
+			top: 0;
+			left: -90px;
+		}
+
+		&_three {
+			width: 380px;
+		}
+
+		&_four, &_five {
+			width: 280px;
+		}
+
+		&_six {
+			width: 180px;
+		}
+	}
+
+	&__figcaption {
+		padding-top: 10px;
+		font-size: 20px;
+		line-height: 26px;
+
+		&_six {
+			padding-top: 20px;
+		}
+	}
+}
